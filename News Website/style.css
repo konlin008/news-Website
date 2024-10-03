@@ -41,6 +41,7 @@ body {
   list-style: none;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .news_input {
   padding: 10px 20px;
@@ -62,21 +63,37 @@ body {
 #news-Section {
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
 }
 .news-card {
+  padding: 1vw;
   width: 21vw;
   height: fit-content;
+  margin-bottom: 2.5vw;
+  box-shadow: 4px 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+.news-card:hover {
+  scale: 1.02;
+}
+.newsTitle {
+  margin: 1vw 0;
 }
 .newsImg {
   width: 100%;
+  border-radius: 5px;
 }
-.newsDescription {
-  margin: 0.8vw 0;
-}
+
 .newsData {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1vw;
 }
 .newsData h5 {
   font-weight: 400;
