@@ -59,3 +59,25 @@ body {
   padding: 5px 25px;
   border-radius: 50px;
 }
+#news-Section {
+  width: 100%;
+  min-height: 100vh;
+}
+.news-card {
+  width: 21vw;
+  height: fit-content;
+}
+.newsImg {
+  width: 100%;
+}
+.newsDescription {
+  margin: 0.8vw 0;
+}
+.newsData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsData h5 {
+  font-weight: 400;
+}
