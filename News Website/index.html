@@ -10,53 +10,62 @@
       rel="stylesheet"
     />
   </head>
-  <div id="main">
-    <div id="nav">
-      <div class="nav_part1">
-        <img src="brand-logo.png" alt="" />
-      </div>
-      <div class="nav_part2">
-        <ul>
-          <li class="links" id="tech" onclick="onNavItemClick('tech')">
-            Technology
-          </li>
-          <li class="links" id="business" onclick="onNavItemClick('business')">
-            Business
-          </li>
-          <li class="links" id="world" onclick="onNavItemClick('world')">
-            World News
-          </li>
-          <li class="links" id="sports" onclick="onNavItemClick('sports')">
-            Sports
-          </li>
-          <li class="links" id="Politics" onclick="onNavItemClick('Politics')">
-            Politics
-          </li>
-        </ul>
-      </div>
-      <div class="nav_part3">
-        <input type="text" class="news_input" placeholder="e.g: Science" />
-        <i class="ri-search-line"></i>
-      </div>
-    </div>
-    <div id="news-Section"></div>
-  </div>
-  <template id="news-section-temp">
-    <div class="news-card">
-      <img src="https://placehold.co/400x250" alt="" id="newsImg" />
-      <h3 class="newsTitle">News Title</h3>
-      <p class="newsDescription">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
-        dignissimos? Voluptatibus maxime veniam ea quibusdam voluptatum labore
-        commodi, aut sequi?
-      </p>
-      <div class="newsData">
-        <h5 class="source">bbc news</h5>
-        <h5 class="date">Aug 6, 2024</h5>
-      </div>
-    </div>
-  </template>
+
   <body>
+    <div id="main">
+      <div id="nav">
+        <div class="nav_part1">
+          <img src="brand-logo.png" alt="" />
+        </div>
+        <div class="nav_part2">
+          <ul>
+            <li class="links" id="tech" onclick="onNavItemClick('tech')">
+              Technology
+            </li>
+            <li
+              class="links"
+              id="business"
+              onclick="onNavItemClick('business')"
+            >
+              Business
+            </li>
+            <li class="links" id="world" onclick="onNavItemClick('world')">
+              World News
+            </li>
+            <li class="links" id="sports" onclick="onNavItemClick('sports')">
+              Sports
+            </li>
+            <li
+              class="links"
+              id="Politics"
+              onclick="onNavItemClick('Politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="nav_part3">
+          <input type="text" id="news_input" placeholder="e.g: Science" />
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+      <div id="news-Section"></div>
+    </div>
+    <template id="news-section-temp">
+      <div class="news-card">
+        <img src="https://placehold.co/400x250" alt="" id="newsImg" />
+        <h3 class="newsTitle">News Title</h3>
+        <p class="newsDescription">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          dignissimos? Voluptatibus maxime veniam ea quibusdam voluptatum labore
+          commodi, aut sequi?
+        </p>
+        <div class="newsData">
+          <h5 class="source">bbc news</h5>
+          <h5 class="date">Aug 6, 2024</h5>
+        </div>
+      </div>
+    </template>
     <script src="./main.js"></script>
   </body>
 </html>

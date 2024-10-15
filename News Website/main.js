@@ -8,7 +8,7 @@ async function fetchNews(query) {
   const data = await res.json();
   console.log(data);
 
-  bindDAta(data.articles);
+  bindDAta(data.articles.slice(0, 30));
 }
 function bindDAta(articles) {
   var newsSection = document.getElementById("news-Section");
@@ -45,8 +45,18 @@ function fillDataInCard(cardClone, article) {
   });
 }
 
-let currentSelectedItem = null;
-
+let crntSeleNav = null;
 function onNavItemClick(id) {
   fetchNews(id);
+  const navItem = document.getElementById(id);
+  crntSeleNav?.classList.remove("active");
+  crntSeleNav = navItem;
+  crntSeleNav.classList.add("active");
 }
+
+const searchBtn = document.querySelector("#searchBtn");
+
+searchBtn.addEventListener("click", () => {
+  const searchInput = document.querySelector("#news_input").value;
+  fetchNews(searchInput);
+});
